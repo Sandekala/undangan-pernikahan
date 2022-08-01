@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Cormorant+SC&family=Great+Vibes&family=Poppins&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+.background {
+  background-image: url('assets/image/background.jpg');
+  background-size: cover;
+}
+
+@font-face {
+  font-family: 'Amiri', serif;
+  font-family: 'Cormorant SC', serif;
+  font-family: 'Great Vibes', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
