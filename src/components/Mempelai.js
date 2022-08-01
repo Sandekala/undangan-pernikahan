@@ -67,7 +67,6 @@ const Mempelai = ({ pria, wanita, tahun, bulan, tanggal, jam, menit }) => {
   const thn = H.getFullYear();
   // Memperbarui hitungan mundur setiap 1 detik
   useEffect(() => {
-    const H = new Date(tahun, bulan, tanggal, jam, menit);
     const hariH = H.getTime();
     const x = setInterval(function () {
       // Untuk mendapatkan tanggal dan waktu hari ini

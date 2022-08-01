@@ -7,7 +7,11 @@ const Cover = ({ pria, wanita }) => {
     get: (searchParams, prop) => searchParams.get(prop),
   });
   const tujuan = params.to;
-  const penerimaUndangan = tujuan.toUpperCase();
+  console.log(tujuan);
+  let penerimaUndangan;
+  if (tujuan !== null) {
+    penerimaUndangan = tujuan.toUpperCase();
+  }
 
   const open = () => {
     const cover1 = document.getElementById('cover1');
@@ -16,6 +20,8 @@ const Cover = ({ pria, wanita }) => {
     elementBuka.forEach((element) => {
       element.classList.add('opacity-0');
     });
+    cover1.classList.remove('w-[50%]');
+    cover2.classList.remove('w-[50%]');
     cover1.classList.add('w-0');
     cover2.classList.add('w-0');
   };
@@ -32,7 +38,7 @@ const Cover = ({ pria, wanita }) => {
             {pria} &amp; {wanita}
           </h1>
           <h2>Kepada Bapak/Ibu/Sahabat</h2>
-          <p className="my-7 text-xl">{penerimaUndangan}</p>
+          <p className="my-7 text-xl">{tujuan === null ? 'Tujuan Belum Ditentukan' : penerimaUndangan}</p>
           <p>Kami mengundang Anda untuk menghadiri acara pernikahan kami.</p>
         </div>
         <button onClick={open} className="buka absolute -left-24 top-[80%] z-30 flex flex-row items-center gap-3 rounded-xl bg-black px-4 py-1  text-secondary transition-all duration-500 md:top-[60%] lg:top-3/4">
