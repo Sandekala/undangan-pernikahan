@@ -33,7 +33,7 @@ const Cover = ({ pria, wanita }) => {
         <div className="buka absolute -left-28 top-[10%] transition-all duration-500">
           <Hero src={foto} alt="Foto Pengantin" />
         </div>
-        <div className="buka absolute -left-[100%] top-[50%] text-center text-secondary transition-all duration-500  md:top-[40%] md:-left-[65%] lg:top-[43%] lg:-left-[35%]">
+        <div className="buka absolute -left-[100%] top-[45%] text-center text-secondary transition-all duration-500  md:top-[40%] md:-left-[65%] lg:top-[43%] lg:-left-[35%]">
           <h1 className="pb-10 font-GreatVibes text-3xl">
             {pria} &amp; {wanita}
           </h1>
