@@ -33,7 +33,7 @@ function App() {
           <Hero src={foto} alt="Foto Pengantin" />
           {/* tanggal resepsi */}
           {/* { pria, wanita, tahun, bulan harus -1, tanggal, jam, menit } */}
-          <Mempelai pria={'Mempelai Pria'} wanita={'Mempelai Wanita'} tahun={2022} bulan={6} tanggal={31} jam={0} menit={0} />
+          <Mempelai pria={'Mempelai Pria'} wanita={'Mempelai Wanita'} tahun={2022} bulan={10} tanggal={16} jam={8} menit={0} />
 
           <Audio musik={backsound} />
         </Home>
@@ -51,7 +51,7 @@ function App() {
       <ContainerPrimary>
         <SectionDoa />
         {/* { judul1, judul2, judul3, foto1, foto2, foto3, alt1, alt2, alt3 } */}
-        <LoveStory tglHub1={'Agustus 2021'} tglHub2={'September 2021'} tglHub3={'November 2021'} judul1={'Pertama Bertemu'} judul2={'Jadian'} judul3={'Putus'} foto1={foto} foto2={foto} foto3={pria} alt1={'tes1'} alt2={'tes2'} alt3={'tes3'} />
+        <LoveStory tglHub1={'Agustus 2021'} tglHub2={'September 2021'} tglHub3={'November 2021'} judul1={'Pertama Bertemu'} judul2={'Menjalin Hubungan'} judul3={'Tunangan'} foto1={foto} foto2={foto} foto3={foto} alt1={'tes1'} alt2={'tes2'} alt3={'tes3'} />
       </ContainerPrimary>
       <Batas2 />
       <ContainerSecondary>
