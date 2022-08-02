@@ -6,14 +6,20 @@ const MempelaiCard = ({ panggilan, nama, anak, bapak, ibu, foto, alt, ig }) => {
       <div className="h-[500px] w-[300px]">
         <Hero src={foto} alt={alt} />
         <div className="relative h-full w-full">
-          <div className="absolute left-0 right-0 -top-32 m-auto max-w-[350px] rounded-3xl border-2 border-solid border-secondary bg-primary text-center text-white">
-            <h1 className="pt-40 font-GreatVibes text-5xl">{panggilan}</h1>
-            <h2 className="text-2xl">{nama}</h2>
-            <h3 className="font-bold">{anak} dari</h3>
-            <p>
+          <div className="absolute left-0 right-0 -top-32 m-auto max-w-[350px] rounded-3xl border-2 border-solid border-secondary bg-primary text-center text-white" data-aos="flip-left" data-aos-duration="1000">
+            <h1 className="pt-40 font-GreatVibes text-5xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              {panggilan}
+            </h1>
+            <h2 className="text-2xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+              {nama}
+            </h2>
+            <h3 className="font-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+              {anak} dari
+            </h3>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
               Bapak {bapak} &amp; Ibu {ibu}
             </p>
-            <div className="m-auto my-5 w-[30px]">
+            <div className="m-auto my-5 w-[30px]" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
               <a href={ig} target="_blank" rel="noreferrer">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width={'30px'} fill="#fff">
                   <title>Instagram</title>

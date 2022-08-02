@@ -22,8 +22,15 @@ import Navbar from './components/Navbar';
 import Audio from './components/Audio';
 import backsound from './assets/Aku Ingin.mp3';
 import Cover from './components/Cover';
+import Aos from 'aos';
+import React, { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    Aos.init({
+      once: false,
+    });
+  }, []);
   return (
     <>
       <Cover pria={'Pria'} wanita={'Wanita'} />

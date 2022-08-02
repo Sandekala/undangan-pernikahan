@@ -7,7 +7,6 @@ const Cover = ({ pria, wanita }) => {
     get: (searchParams, prop) => searchParams.get(prop),
   });
   const tujuan = params.to;
-  console.log(tujuan);
   let penerimaUndangan;
   if (tujuan !== null) {
     penerimaUndangan = tujuan.toUpperCase();

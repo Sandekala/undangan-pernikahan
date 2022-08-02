@@ -98,26 +98,26 @@ const Mempelai = ({ pria, wanita, tahun, bulan, tanggal, jam, menit }) => {
 
   return (
     <>
-      <h2 className="mt-10 font-GreatVibes text-5xl font-extrabold">
+      <h2 className="mt-10 font-GreatVibes text-5xl font-extrabold" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
         {pria} &amp; {wanita}
       </h2>
-      <p className="mt-5 text-2xl font-bold">
+      <p className="mt-5 text-2xl font-bold" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="2000">
         {day}, {H.getDate()} {bln} {thn}
       </p>
       <div id="countDown" className="mt-9 flex w-full flex-row flex-wrap justify-center gap-7">
-        <div className="w-16 rounded-md bg-primary p-2 text-secondary shadow-md shadow-white">
+        <div className="w-16 rounded-md bg-primary p-2 text-secondary shadow-md shadow-white" data-aos="fade-up" data-aos-delay="2000">
           <div id="hari" className="text-2xl"></div>
           <p>Hari</p>
         </div>
-        <div className="w-16 rounded-md bg-primary p-2 text-secondary shadow-md shadow-white">
+        <div className="w-16 rounded-md bg-primary p-2 text-secondary shadow-md shadow-white" data-aos="fade-up" data-aos-delay="2200">
           <div id="jam" className="text-2xl"></div>
           <p>Jam</p>
         </div>
-        <div className="w-16 rounded-md bg-primary p-2 text-secondary shadow-md shadow-white">
+        <div className="w-16 rounded-md bg-primary p-2 text-secondary shadow-md shadow-white" data-aos="fade-up" data-aos-delay="2400">
           <div id="menit" className="text-2xl"></div>
           <p>Menit</p>
         </div>
-        <div className="w-16 rounded-md bg-primary p-2 text-secondary shadow-md shadow-white">
+        <div className="w-16 rounded-md bg-primary p-2 text-secondary shadow-md shadow-white" data-aos="fade-up" data-aos-delay="2600">
           <div id="detik" className="text-2xl"></div>
           <p>Detik</p>
         </div>

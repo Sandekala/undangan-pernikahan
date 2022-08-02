@@ -11,11 +11,11 @@ const Event = ({ lokakad, tglakad, hariakad, jamakad, lokresepsi, tglresepsi, ha
   };
   return (
     <>
-      <h1 id="event" className="pt-10 text-center font-GreatVibes text-3xl">
+      <h1 id="event" className="pt-10 text-center font-GreatVibes text-3xl" data-aos="fade-up" data-aos-duration="1000">
         Rangkaian Acara
       </h1>
       <div className="flex flex-row flex-wrap items-center justify-center gap-20">
-        <div style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover' }} className="mt-10 h-[500px] w-[300px] rounded-3xl border-8 border-solid border-primary text-center">
+        <div style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover' }} className="mt-10 h-[500px] w-[300px] rounded-3xl border-8 border-solid border-primary text-center" data-aos="flip-left" data-aos-duration="1000">
           <div className="m-auto mt-5 flex h-20 w-20 items-center justify-center rounded-full bg-primary">
             <Handshake fill="#f2e5dc" width={'60px'} />
           </div>
@@ -32,7 +32,7 @@ const Event = ({ lokakad, tglakad, hariakad, jamakad, lokresepsi, tglresepsi, ha
           </div>
           <p className="font-bold">{jamakad}</p>
         </div>
-        <div style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover' }} className="mt-10 h-[500px] w-[300px] rounded-3xl border-8 border-solid border-primary text-center">
+        <div style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover' }} className="mt-10 h-[500px] w-[300px] rounded-3xl border-8 border-solid border-primary text-center" data-aos="flip-right" data-aos-duration="1000">
           <div className="m-auto mt-5 flex h-20 w-20 items-center justify-center rounded-full bg-primary">
             <Resepsi fill="#f2e5dc" width={'50px'} />
           </div>
@@ -49,7 +49,7 @@ const Event = ({ lokakad, tglakad, hariakad, jamakad, lokresepsi, tglresepsi, ha
           </div>
           <p className="font-bold">{jamresepsi}</p>
         </div>
-        <div style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover' }} className="mt-10 h-[500px] w-[300px] rounded-3xl border-8 border-solid border-primary text-center">
+        <div style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover' }} className="mt-10 h-[500px] w-[300px] rounded-3xl border-8 border-solid border-primary text-center" data-aos="flip-left" data-aos-duration="1000">
           <h2 className="font-Cormorant text-3xl font-bold">Lokasi Acara</h2>
           <div className="flex items-center justify-center">
             <iframe title="Maps" width={'250px'} height={'380px'} style={{ marginBottom: 20, borderRadius: 15 }} referrerPolicy={'no-referrer-when-downgrade'} loading={'lazy'} allowFullScreen={''} src={map}></iframe>

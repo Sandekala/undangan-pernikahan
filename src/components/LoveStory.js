@@ -5,7 +5,9 @@ const LoveStory = ({ judul1, judul2, judul3, foto1, foto2, foto3, alt1, alt2, al
   return (
     <>
       <div className="relative mb-16">
-        <h1 className="mt-28 mb-10 text-center font-GreatVibes text-3xl ">Kisah Cinta Kita</h1>
+        <h1 className="mt-28 mb-10 text-center font-GreatVibes text-3xl" data-aos="fade-up" data-aos-duration="1000">
+          Kisah Cinta Kita
+        </h1>
 
         <div className="flex flex-row justify-between gap-5 sm:md:lg:justify-center">
           <div className="relative">
