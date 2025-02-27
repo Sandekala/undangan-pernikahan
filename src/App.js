@@ -40,7 +40,7 @@ function App() {
           <Hero src={foto} alt="Foto Pengantin" />
           {/* tanggal resepsi */}
           {/* { pria, wanita, tahun, bulan harus -1, tanggal, jam, menit } */}
-          <Mempelai pria={'Mempelai Pria'} wanita={'Mempelai Wanita'} tahun={2022} bulan={10} tanggal={16} jam={8} menit={0} />
+          <Mempelai pria={'Mempelai Pria'} wanita={'Mempelai Wanita'} tahun={2025} bulan={5} tanggal={24} jam={8} menit={0} />
 
           <Audio musik={backsound} />
         </Home>
